@@ -1,0 +1,5 @@
+/**
+     * 获取推广页面查询条件带自然流量
+     * @return
+     */
+    Map<String,Object> getLpConditionWithNaturalFlow();

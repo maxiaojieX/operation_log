@@ -1,0 +1,6 @@
+Map<String,Object> map = Maps.newConcurrentMap();
+        List<H5Channel> h5Channels = h5ChannelConditionDao.findH5ChannelIdAndName();
+        for(H5Channel h5Channel : h5Channels) {
+            map.put(h5Channel.getChannelId().toString(),h5Channel.getChannelName());
+        }
+        return map;

@@ -1,0 +1,1 @@
+原先resin.sh  + start / stop 的启动停止命令 改为 resinctl + start / stop

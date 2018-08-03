@@ -1,0 +1,5 @@
+if (resp.code != ghw.constant.resp_status.success) {
+                $("#bornAllAppShareHtml").attr("style","display:block;");
+            }
+            appConfig.bootSwitch();
+            appConfig.shareCtlModel.modal('show');

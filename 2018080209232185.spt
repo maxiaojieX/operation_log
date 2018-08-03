@@ -1,0 +1,16 @@
+<div class="screen" style="padding-left: 14px;padding-right: 20px;overflow-y: auto; width: 394px">
+            <h2 align="center">消息</h2>
+            <br>
+            <div>
+                <h3 id="titlePre" style="font-weight: normal">
+
+                </h3>
+                <div id="detilPre" style="color: #999">
+                    发件人  【系统】 xxxx-xx-xx
+                </div>
+                <br>
+                <div id="contentPre" style="font-size: 18px;word-wrap: break-word;">
+
+                </div>
+            </div>
+        </div>

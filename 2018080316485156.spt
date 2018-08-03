@@ -1,0 +1,1 @@
+log.error("≤∂ªÒNoHandlerException£¨uri:{}",request.getRequestURI());

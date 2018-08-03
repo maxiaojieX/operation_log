@@ -1,0 +1,7 @@
+/**
+     * 获取所有公用查询条件
+     * 包括
+     * 渠道、推广页面、游戏、注册终端
+     * @return
+     */
+    Map<String,Map<String,Object>> getAllCondition();

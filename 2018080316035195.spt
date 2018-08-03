@@ -1,0 +1,13 @@
+ghw.ajax.request({
+            url : ctxPath+"/app_config/get_appsharelink?appId="+id,
+            type : "GET",
+            dataType : "json",
+            success : function(resp){
+                if(resp.code == resp_status.success) {
+                    $("#defaultLink").html(resp.data)
+                    appConfig.appShareHtmlModel.modal('show');
+                }else {
+                    ghw.util.msgAlert({message: "获取游戏详情失败",type:"danger"});
+                }
+            }
+        })

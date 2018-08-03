@@ -1,0 +1,3 @@
+if(NOTICESTATUS.equals(str)) {
+                map.put("noticeStatus",getNoticeStatus());
+            }

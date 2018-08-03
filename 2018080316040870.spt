@@ -1,0 +1,6 @@
+if (resp.code == ghw.constant.resp_status.success) {
+                    $("#bornAllAppShareHtml").attr("style","display:none;");
+                    ghw.util.msgAlert({message: "生成成功，请稍后查看", type: "success"});
+                } else {
+                    ghw.util.msgAlert({message: "生成失败，请稍后操作", type: "danger"});
+                }

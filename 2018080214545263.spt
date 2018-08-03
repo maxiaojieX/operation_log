@@ -1,0 +1,2 @@
+com.caucho.bam.RemoteConnectionFailedException: BamError[type=cancel,group=remote-connection-failed,text=Cannot connect to http://127.0.0.1:6600/hmtp
+  java.net.ConnectException: Connection refused]

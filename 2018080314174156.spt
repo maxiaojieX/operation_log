@@ -1,0 +1,3 @@
+if(H5GAME.equals(str)) {
+                map.put("games",getGameCondition());
+            }

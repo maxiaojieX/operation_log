@@ -1,0 +1,1 @@
+$("#headerPre").html($("#newsType").find("option:selected").text());

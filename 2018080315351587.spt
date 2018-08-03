@@ -1,0 +1,3 @@
+private boolean isAjaxRequest(HttpServletRequest request) {
+        return Objects.equals("XMLHttpRequest", request.getHeader("X-Requested-With"));
+    }

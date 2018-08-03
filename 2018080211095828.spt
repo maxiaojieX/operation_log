@@ -1,0 +1,8 @@
+//查询单个渠道条件
+Map<String, Map<String,String>> findCommonChennel()
+
+渠道标识	下拉框
+Map		channelMap;
+map.put("channels",channelMap);
+
+Return channelMap;

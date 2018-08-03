@@ -1,0 +1,3 @@
+if(USERSTATUS.equals(str)) {
+                map.put("userStatus",getUserStatus());
+            }

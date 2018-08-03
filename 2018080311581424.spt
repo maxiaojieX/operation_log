@@ -1,0 +1,12 @@
+@Override
+    @DataSource(value = Constant.GHW_CG_ALIAS_READ)
+    public List<Map<String, Object>> getAllRegistWay() {
+        String sql = "SELECT * FROM sys_data_dict WHERE group_name = ?";
+        List<Map<String, Object>> result = Lists.newArrayList();
+        try {
+            result = jdbcTemplate.queryForList(sql, new Object[]{UserConstant.DICT_REGIST_WAY_GROUP});
+        } catch (DataAccessException e) {
+            log.error("查询数据库出现异常：{}", e.toString());
+        }
+        return result;
+    }

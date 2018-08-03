@@ -1,0 +1,12 @@
+ghw.ajax.request({
+            url : ctxPath + "/app_config/born_all_appsharehtml",
+            type : "GET",
+            dataType : "json",
+            success : function(resp){
+                if (resp.code != ghw.constant.resp_status.success) {
+                    $("#bornAllAppShareHtml").attr("style","display:block;");
+                }
+                appConfig.bootSwitch();
+                appConfig.shareCtlModel.modal('show');
+            }
+        })

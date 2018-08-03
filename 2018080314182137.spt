@@ -1,0 +1,3 @@
+if(REGISTTERMINAL.equals(str)) {
+                map.put("registTerminals",getRegistTerminalCondition());
+            }

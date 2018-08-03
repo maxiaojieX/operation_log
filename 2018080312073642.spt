@@ -1,0 +1,1 @@
+SELECT sys_data_dict.name,sys_data_dict.value FROM sys_data_dict WHERE group_name='USER_REGIST_WAY'

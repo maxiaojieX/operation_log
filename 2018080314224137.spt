@@ -1,0 +1,3 @@
+if(PAYSTATUS.equals(str)) {
+                map.put("payStatus",getPayStatus());
+            }

@@ -1,0 +1,19 @@
+if(resp.data){
+                    if(resp.data.appType){
+                        var qatDiv=$("#qAppTypeId"),atDiv=$("#appTypeId");
+                        qatDiv.empty();
+                        atDiv.empty();
+                        qatDiv.append("<option value=''>-"+$.i18n.prop("pl_select")+"-</option>");
+                        atDiv.append("<option value=''>-"+$.i18n.prop("pl_select")+"-</option>");
+                        $.each(resp.data.appType,function (index,obj) {
+                            appConfig.appType[obj.id] = obj.name;
+                            qatDiv.append("<option value='"+obj.id+"'>"+$.encoder.encodeForHTML(obj.name)+"</option>");
+                            atDiv.append("<option value='"+obj.id+"'>"+$.encoder.encodeForHTML(obj.name)+"</option>");
+                        })
+                    }
+                    if(resp.data.appLabel){
+                        $.each(resp.data.appLabel,function (index,obj) {
+                            appConfig.appLabel[obj.id] = obj.name;
+                        })
+                    }
+                }

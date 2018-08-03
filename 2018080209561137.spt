@@ -1,0 +1,10 @@
+
+$("#ItemNum").on("input propertychange",function(){
+     if($(this).val()==""){
+         $(this).attr("itemid","");
+        var itemid = $("#ItemNum").attr("itemid");
+         if(itemid == ""){
+             $(".item-color ,.item-size").hide();
+         }
+     }
+}

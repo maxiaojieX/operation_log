@@ -1,0 +1,6 @@
+Map<String,Object> map = Maps.newConcurrentMap();
+        List<H5LandingPage> h5LandingPages = h5LandingPageConditionDao.findH5LandingPageIdAndName();
+        for(H5LandingPage h5LandingPage : h5LandingPages) {
+            map.put(h5LandingPage.getId().toString(),h5LandingPage.getPageName());
+        }
+        return map;

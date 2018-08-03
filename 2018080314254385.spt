@@ -1,0 +1,45 @@
+/**
+     * 渠道
+     */
+    public static final String H5CHANNEL = "H5CHANNEL";
+    /**
+     * 推广页面 lp
+     */
+    public static final String LP = "LP";
+    /**
+     * 游戏的id和name
+     */
+    public static final String H5GAME = "H5GAME";
+    /**
+     * 游戏的sdk id 和 name
+     */
+    public static final String SDKGAME = "SDKGAME";
+    /**
+     * 注册终端
+     */
+    public static final String REGISTTERMINAL = "REGISTTERMINAL";
+
+    /**
+     * 注册方式
+     */
+    public static final String REGISTWAY= "REGISTWAY";
+
+    /**
+     * 通知状态
+     */
+    public static final String NOTICESTATUS= "NOTICESTATUS";
+
+    /**
+     * 用户状态
+     */
+    public static final String USERSTATUS= "USERSTATUS";
+
+    /**
+     * 支付状态
+     */
+    public static final String PAYSTATUS= "PAYSTATUS";
+
+    /**
+     * 发货状态
+     */
+    public static final String GRANTSTATUS= "GRANTSTATUS";

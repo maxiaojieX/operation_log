@@ -1,0 +1,4 @@
+Lpобю╜©Р
+<c:forEach var="lp" items="${condition.lps}">
+       <option value="${lp.key}">${lp.value}</option>
+</c:forEach>

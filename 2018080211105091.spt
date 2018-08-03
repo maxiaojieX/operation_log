@@ -1,0 +1,9 @@
+//查询单个game条件
+Map<String, Map<String,String>> findCommonGame()
+
+推广页面	下拉框
+游戏		下拉框
+Map		gameMap;
+map.put("games",gameMap);
+
+Return channelMap;

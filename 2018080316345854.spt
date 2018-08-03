@@ -1,0 +1,27 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%
+  String ctxPath = request.getContextPath();
+%>
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>跳转到登录页面</title>
+  <script type="text/javascript" src="<%=ctxPath%>/static/third/jquery.min.js"></script>
+  <script>
+
+    var ctxPath = "${pageContext.request.contextPath}"
+
+    $(function(){
+      setTimeout(function(){
+        top.window.location.href= ctxPath+"/logout"
+      }, 1000)
+    })
+  </script>
+</head>
+<body>
+
+  跳转到登录页面...
+
+</body>
+</html>
