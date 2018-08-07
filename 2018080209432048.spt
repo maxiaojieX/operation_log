@@ -1,3 +1,0 @@
- $("#input_id").on('input',function(e){
-       alert('Changed!')
-    });

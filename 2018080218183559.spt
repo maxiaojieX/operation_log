@@ -1,2 +1,0 @@
-chown  resin  /var/resin/ 
-chgrp  resin /var/resin/ 

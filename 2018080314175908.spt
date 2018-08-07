@@ -1,3 +1,0 @@
-if(SDKGAME.equals(str)) {
-                map.put("sdkGames",getSdkGameCondition());
-            }

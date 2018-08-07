@@ -1,7 +1,0 @@
-$("select").bind("change",function () {
-                if (this.value== "苹果")
-                   $(this).css("background-color", "red");
-                else
-                   $(this).css("background-color", "green");
-                   $('div').html("你选择的是:"+$(this).val());
-                })

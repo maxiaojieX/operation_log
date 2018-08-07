@@ -1,1 +1,0 @@
-select h5_app.id, h5_app.name, h5_app_config.url from h5_app  left join h5_app_config on h5_app.id = h5_app_config.app_id  WHERE h5_app_config.status=0

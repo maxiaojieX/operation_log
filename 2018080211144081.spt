@@ -1,4 +1,0 @@
-gameÏÂÀ­¿ò
-<c:forEach var="game" items="${condition.games}">
-       <option value="${game.key}">${game.value}</option>
-</c:forEach>

@@ -1,4 +1,0 @@
-ÇşµÀÏÂÀ­¿ò
-<c:forEach var="channel" items="${condition.channels}">
-       <option value="${channel.key}">${channel.value}</option>
-</c:forEach>

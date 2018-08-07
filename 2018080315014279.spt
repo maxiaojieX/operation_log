@@ -1,1 +1,0 @@
-userValue.setREGIST_TERMINAL(regMap.get(userValue.getREGIST_TERMINAL()));

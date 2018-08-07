@@ -1,1 +1,0 @@
-SELECT channel_id,channel_name FROM h5_channel 

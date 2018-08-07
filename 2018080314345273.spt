@@ -1,4 +1,0 @@
-Map<String,String> regMap = Maps.newConcurrentMap();
-        regMap.put("0","ÒÆ¶¯¶Ë");
-        regMap.put("1","PC¶Ë");
-        regMap.put("2","Î¢¶Ë");

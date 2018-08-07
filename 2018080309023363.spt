@@ -1,5 +1,0 @@
-/**
-     * 获取渠道标识查询条件
-     * @return
-     */
-    Map<String,Object> getChannelCondition();

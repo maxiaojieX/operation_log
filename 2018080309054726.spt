@@ -1,6 +1,0 @@
-Map<String,Map<String,Object>> map = Maps.newConcurrentMap();
-        map.put("channels",getChannelCondition());
-        map.put("lps",getLpCondition());
-        map.put("games",getGameCondition());
-        map.put("registTerminals",getRegistTerminalCondition());
-        return map;

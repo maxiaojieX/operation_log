@@ -1,1 +1,0 @@
-$("#detilPre").html("发件人  【系统】 "+ghw.util.parseMillisecondToMoment(rowData.startTime, newsinfo.zoneOffset).format('YYYY-MM-DD HH:mm:ss'))

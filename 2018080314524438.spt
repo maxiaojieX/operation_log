@@ -1,7 +1,0 @@
-ghw.ajax.get(ctxPath + "/app_config/born_all_appsharehtml", function (resp) {
-            if (resp.code != ghw.constant.resp_status.success) {
-                $("#bornAllAppShareHtml").attr("style","display:block;");
-            }
-            appConfig.bootSwitch();
-            appConfig.shareCtlModel.modal('show');
-        })

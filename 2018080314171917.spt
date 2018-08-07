@@ -1,3 +1,0 @@
-if(LP.equals(str)) {
-                map.put("lps",getLpConditionWithNaturalFlow());
-            }

@@ -1,2 +1,0 @@
-console.error($(this).val())
-            $("#detilPre").html("发件人  【系统】 "+$(this).val())

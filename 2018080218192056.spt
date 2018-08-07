@@ -1,1 +1,0 @@
-将/etc/resin/resin.properties  setuid_uer及setuid_group改为上面创建的resin

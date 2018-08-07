@@ -1,3 +1,0 @@
-if(REGISTWAY.equals(str)) {
-                map.put("registWay",getRegistTerminalCondition());
-            }

@@ -1,8 +1,0 @@
-//查询单个LP条件
-Map<String, Map<String,String>> findCommonLp()
-
-推广页面	下拉框
-Map		lpMap;
-map.put("lps",lpMap);
-
-Return channelMap;
