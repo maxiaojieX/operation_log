@@ -1,7 +1,145 @@
-﻿
+﻿59471574	2450000
+59471613	159600000
 
 
 
+
+
+
+
+
+
+59471571	
+59471572	0
+59471574	2450000
+59471583	1170000
+59471587	1170000
+59471613	159600000
+59471701	97970000
+59471733	5960000
+
+
+59471571	
+59471572	0
+59471574	2450000
+59471583	1170000
+59471587	1170000
+59471613	159600000
+59471701	2340000
+59471733	1170000
+
+('GST1808150000182GST1808150000180')
+
+
+
+
+
+
+select channel_pay_type,disputes,order_id, trx_id, user_id, po.app_id, ai.app_name, product_name, order_amount_micros,default_amount_micros,pay_amount_micros,default_currency, currency_code, channel, os, po.create_time, po.status, notice_status, game_user_id, deliver_status, channel_id,country,city, po.test_flag, po.run_platform,  server_id,pay_done_time,cps_channel, discount_rate,po.pay_dollar_amount_micros,'USD' usd_currency from payment_order po left join app_info ai on ai.app_id=po.app_id where 1=1  and po.trx_id in  ('GST1808150000182') and po.create_time >= '2018-08-10 00:00:00'  and po.create_time <= '2018-08-16 23:59:59'  order by po.create_time desc limit 0,25
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SELECT sum(pay_dollar_amount_micros) sm,count(DISTINCT user_id) uc,a.client_id FROM payment_order a WHERE a.`status` = 1 AND a.client_id NOT IN (SELECT payment_order.client_id FROM payment_order INNER JOIN pay_black_list ON payment_order.client_id=pay_black_list.client_id) AND a.pay_done_time >= '2000-12-19 06:00:00' AND a.pay_done_time <= '2018-05-30 13:40:43' GROUP BY client_id HAVING uc > 1 AND sm > 1 ORDER BY uc DESC;
+
+
+
+AND a.pay_done_time >= '2000-12-19 06:00:00' AND a.pay_done_time <= '2018-05-30 13:40:43'
+
+
+SELECT
+	sum(pay_dollar_amount_micros) sm,
+	count(DISTINCT user_id) uc,
+	a.client_id
+FROM
+	payment_order a
+WHERE
+	a.`status` = 1
+AND a.client_id NOT IN (SELECT payment_order.client_id FROM payment_order INNER JOIN pay_black_list ON payment_order.client_id=pay_black_list.client_id)
+AND a.pay_done_time >= '2000-12-19 06:00:00'
+AND a.pay_done_time <= '2018-05-30 13:40:43'
+GROUP BY
+	client_id
+HAVING
+	uc > 1
+AND sm > 1
+ORDER BY
+	uc DESC;
+
+SELECT payment_order.client_id FROM payment_order INNER JOIN pay_black_list ON payment_order.client_id=pay_black_list.client_id
+
+SELECT * FROM payment_order WHERE client_id='38290253eb6779141824d4745e854171'
+
+
+select count(1) as paging_total_cnt from (SELECT sum(pay_dollar_amount_micros) sm,count(DISTINCT user_id) uc,a.client_id FROM payment_order a WHERE a.`status` = 1 AND a.client_id NOT IN (SELECT payment_order.client_id FROM payment_order INNER JOIN pay_black_list ON payment_order.client_id=pay_black_list.client_id) AND a.pay_done_time >= '2000-12-19 06:00:00' AND a.pay_done_time <= '2018-05-30 13:40:43' GROUP BY client_id HAVING uc > 1 AND sm > 1 ORDER BY uc DESC ) as paging_tem
+
+
+
+
+SELECT DISTINCT
+	user_id,
+	(
+		SELECT
+			SUM(pay_dollar_amount_micros)
+		FROM
+			payment_order
+		WHERE
+			user_id = a.user_id
+		AND client_id = a.client_id
+		AND `status` = 1
+	) as deviceAmount,
+	(
+		SELECT
+			SUM(pay_dollar_amount_micros)
+		FROM
+			payment_order
+		WHERE
+			user_id = a.user_id
+		AND app_id = 'f7f9a9d18da611e5a0be000d3a906774'
+		AND `status` = 1
+	) as appAmount,
+	(
+		SELECT
+			count(*)
+		FROM
+			payment_order
+		WHERE
+			user_id = a.user_id
+		AND client_id = a.client_id
+		AND `status` = 1
+	) as count
+FROM
+	payment_order a
+WHERE
+	client_id = '38290253eb6779141824d4745e854171'
+AND `status` = 1;
+
+
+
+
+
+
+
+
+
+**************************************************************************
 【Resin安装&卸载】
 
 解压 gz
